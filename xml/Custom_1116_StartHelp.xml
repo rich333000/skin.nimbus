@@ -34,7 +34,7 @@
 				<textoffsety>31</textoffsety>
 				<onclick>Skin.Setbool(firsttimerun)</onclick>
 				<onclick>back</onclick>
-				<onclick>RunScript(script.nimbus.helper,mode=remake_all_cpaths)</onclick>
+				<onclick>RunScript(script.nimbusx8.helper,mode=remake_all_cpaths)</onclick>
 				<align>center</align>
 				<aligny>left</aligny>
 				<texturefocus border="40" colordiffuse="$VAR[FocusColorTheme]">buttons/dialogbutton-fo.png</texturefocus>

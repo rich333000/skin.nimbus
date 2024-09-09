@@ -15,17 +15,23 @@
 	<include file="Includes_FlixPanel.xml" />
 	<include file="Includes_Weather.xml" />
 	<include file="Includes_Seekbar.xml" />
-	<include file="script-nimbus-main_menu_movies.xml" />
-	<include file="script-nimbus-main_menu_tvshows.xml" />
-	<include file="script-nimbus-main_menu_custom1.xml" />
-	<include file="script-nimbus-main_menu_custom2.xml" />
-	<include file="script-nimbus-main_menu_custom3.xml" />
-	<include file="script-nimbus-widget_movies.xml" />
-	<include file="script-nimbus-widget_tvshows.xml" />
-	<include file="script-nimbus-widget_custom1.xml" />
-	<include file="script-nimbus-widget_custom2.xml" />
-	<include file="script-nimbus-widget_custom3.xml" />
-	<include file="script-nimbus-search_history.xml" />
+	<include file="script-nimbusx8-main_menu_movies.xml" />
+	<include file="script-nimbusx8-main_menu_tvshows.xml" />
+	<include file="script-nimbusx8-main_menu_custom1.xml" />
+	<include file="script-nimbusx8-main_menu_custom2.xml" />
+	<include file="script-nimbusx8-main_menu_custom3.xml" />
+	<include file="script-nimbusx8-main_menu_custom4.xml" />
+	<include file="script-nimbusx8-main_menu_custom5.xml" />
+	<include file="script-nimbusx8-main_menu_custom6.xml" />
+	<include file="script-nimbusx8-widget_movies.xml" />
+	<include file="script-nimbusx8-widget_tvshows.xml" />
+	<include file="script-nimbusx8-widget_custom1.xml" />
+	<include file="script-nimbusx8-widget_custom2.xml" />
+	<include file="script-nimbusx8-widget_custom3.xml" />
+	<include file="script-nimbusx8-widget_custom4.xml" />
+	<include file="script-nimbusx8-widget_custom5.xml" />
+	<include file="script-nimbusx8-widget_custom6.xml" />
+	<include file="script-nimbusx8-search_history.xml" />
 	<include file="View_50_List.xml" />
 	<include file="View_51_PosterFlow.xml" />
 	<include file="View_52_IconWall.xml" />
@@ -1336,7 +1342,7 @@
         [
             [Window.IsVisible(Home) | Window.IsVisible(1121) | Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(50) | Control.IsVisible(56)] + 
             String.IsEmpty(Listitem.Art(fanart)) + 
-            String.IsEmpty(Window(home).Property(nimbus_fanart_art)) + 
+            String.IsEmpty(Window(home).Property(nimbusx8_fanart_art)) + 
             !ControlGroup(15000).HasFocus + 
             ![String.IsEqual(Skin.String(HomeArtworkChoice),1)]
         ]

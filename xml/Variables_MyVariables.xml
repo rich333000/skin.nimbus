@@ -246,11 +246,11 @@
 	</variable> -->
 
 	<variable name="TrailerReady.NoBlur">
-    <value condition="String.IsEqual(Skin.String(trailerSetting),1) + ![$EXP[isEpisode] | $EXP[isSeason]] + Skin.HasSetting(Enable.TrailerReadyIcon) + !String.IsEmpty(Window(Home).Property(nimbus.trailer_ready))">▶ </value>
+    <value condition="String.IsEqual(Skin.String(trailerSetting),1) + ![$EXP[isEpisode] | $EXP[isSeason]] + Skin.HasSetting(Enable.TrailerReadyIcon) + !String.IsEmpty(Window(Home).Property(nimbusx8.trailer_ready))">▶ </value>
 	</variable>
 
 	<variable name="TrailerReady.Blur">
-    <value condition="String.IsEqual(Skin.String(trailerSetting),1) + ![$EXP[isEpisode] | $EXP[isSeason]] + Skin.HasSetting(Enable.TrailerReadyIcon) + !String.IsEmpty(Window(Home).Property(nimbus.trailer_ready))">▶ </value>
+    <value condition="String.IsEqual(Skin.String(trailerSetting),1) + ![$EXP[isEpisode] | $EXP[isSeason]] + Skin.HasSetting(Enable.TrailerReadyIcon) + !String.IsEmpty(Window(Home).Property(nimbusx8.trailer_ready))">▶ </value>
 	</variable>
 
 	<variable name="SearchFlixCrumbs">
@@ -410,19 +410,25 @@
 	</variable>
 
 	<variable name="EditMainMenusVar">
-    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),movies)">RunScript(script.nimbus.helper,mode=manage_main_menu_path&amp;cpath_setting=movie.main_menu)</value>
-    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),tvshows)">RunScript(script.nimbus.helper,mode=manage_main_menu_path&amp;cpath_setting=tvshow.main_menu)</value>
-    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom1)">RunScript(script.nimbus.helper,mode=manage_main_menu_path&amp;cpath_setting=custom1.main_menu)</value>
-    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom2)">RunScript(script.nimbus.helper,mode=manage_main_menu_path&amp;cpath_setting=custom2.main_menu)</value>
-    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom3)">RunScript(script.nimbus.helper,mode=manage_main_menu_path&amp;cpath_setting=custom3.main_menu)</value>
+    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),movies)">RunScript(script.nimbusx8.helper,mode=manage_main_menu_path&amp;cpath_setting=movie.main_menu)</value>
+    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),tvshows)">RunScript(script.nimbusx8.helper,mode=manage_main_menu_path&amp;cpath_setting=tvshow.main_menu)</value>
+    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom1)">RunScript(script.nimbusx8.helper,mode=manage_main_menu_path&amp;cpath_setting=custom1.main_menu)</value>
+    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom2)">RunScript(script.nimbusx8.helper,mode=manage_main_menu_path&amp;cpath_setting=custom2.main_menu)</value>
+    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom3)">RunScript(script.nimbusx8.helper,mode=manage_main_menu_path&amp;cpath_setting=custom3.main_menu)</value>
+	<value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom4)">RunScript(script.nimbusx8.helper,mode=manage_main_menu_path&amp;cpath_setting=custom4.main_menu)</value>
+	<value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom5)">RunScript(script.nimbusx8.helper,mode=manage_main_menu_path&amp;cpath_setting=custom5.main_menu)</value>
+	<value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom6)">RunScript(script.nimbusx8.helper,mode=manage_main_menu_path&amp;cpath_setting=custom6.main_menu)</value>
 	</variable>
 
 	<variable name="EditWidgetsVar">
-    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),movies)">RunScript(script.nimbus.helper,mode=manage_widgets&amp;cpath_setting=movie.widget)</value>
-    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),tvshows)">RunScript(script.nimbus.helper,mode=manage_widgets&amp;cpath_setting=tvshow.widget)</value>
-    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom1)">RunScript(script.nimbus.helper,mode=manage_widgets&amp;cpath_setting=custom1.widget)</value>
-    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom2)">RunScript(script.nimbus.helper,mode=manage_widgets&amp;cpath_setting=custom2.widget)</value>
-    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom3)">RunScript(script.nimbus.helper,mode=manage_widgets&amp;cpath_setting=custom3.widget)</value>
+    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),movies)">RunScript(script.nimbusx8.helper,mode=manage_widgets&amp;cpath_setting=movie.widget)</value>
+    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),tvshows)">RunScript(script.nimbusx8.helper,mode=manage_widgets&amp;cpath_setting=tvshow.widget)</value>
+    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom1)">RunScript(script.nimbusx8.helper,mode=manage_widgets&amp;cpath_setting=custom1.widget)</value>
+    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom2)">RunScript(script.nimbusx8.helper,mode=manage_widgets&amp;cpath_setting=custom2.widget)</value>
+    <value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom3)">RunScript(script.nimbusx8.helper,mode=manage_widgets&amp;cpath_setting=custom3.widget)</value>
+	<value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom4)">RunScript(script.nimbusx8.helper,mode=manage_widgets&amp;cpath_setting=custom4.widget)</value>
+	<value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom5)">RunScript(script.nimbusx8.helper,mode=manage_widgets&amp;cpath_setting=custom5.widget)</value>
+	<value condition="String.IsEqual(Container(9000).ListItem.Property(id),custom6)">RunScript(script.nimbusx8.helper,mode=manage_widgets&amp;cpath_setting=custom6.widget)</value>
 	</variable>
 	
 	<variable name="TitleSettingVar">
@@ -606,10 +612,10 @@
 	</variable>
 
 	<variable name="MiniMenuCase700Var">
-		<value condition="String.IsEqual(Skin.String(MenuCaseSetting),0)">Mini menu</value>
-		<value condition="String.IsEqual(Skin.String(MenuCaseSetting),1)">[UPPERCASE]Mini menu[/UPPERCASE]</value>
-		<value condition="String.IsEqual(Skin.String(MenuCaseSetting),2)">[LOWERCASE]Mini menu[/LOWERCASE]</value>
-		<value condition="String.IsEqual(Skin.String(MenuCaseSetting),3)">[CAPITALIZE]Mini menu[/CAPITALIZE]</value>
+		<value condition="String.IsEqual(Skin.String(MenuCaseSetting),0)">Search menu</value>
+		<value condition="String.IsEqual(Skin.String(MenuCaseSetting),1)">[UPPERCASE]Search menu[/UPPERCASE]</value>
+		<value condition="String.IsEqual(Skin.String(MenuCaseSetting),2)">[LOWERCASE]Search menu[/LOWERCASE]</value>
+		<value condition="String.IsEqual(Skin.String(MenuCaseSetting),3)">[CAPITALIZE]Search menu[/CAPITALIZE]</value>
 	</variable>
 
 	<variable name="MiniMenuCase733Var">
@@ -627,8 +633,8 @@
 	</variable>
 
 	<variable name="SearchButtonActionVar">
-		<value condition="!Skin.HasSetting(NoSearchResultsWindow) + !Skin.HasSetting(DefaultSearchWindowBehavior)">RunScript(script.nimbus.helper,mode=open_search_window)</value>
-		<value condition="!Skin.HasSetting(NoSearchResultsWindow) + Skin.HasSetting(DefaultSearchWindowBehavior)">RunScript(script.nimbus.helper,mode=search_input)</value>
+		<value condition="!Skin.HasSetting(NoSearchResultsWindow) + !Skin.HasSetting(DefaultSearchWindowBehavior)">RunScript(script.nimbusx8.helper,mode=open_search_window)</value>
+		<value condition="!Skin.HasSetting(NoSearchResultsWindow) + Skin.HasSetting(DefaultSearchWindowBehavior)">RunScript(script.nimbusx8.helper,mode=search_input)</value>
 		<value condition="Skin.HasSetting(NoSearchResultsWindow)">ActivateWindow(1107)</value>
 	</variable>
 

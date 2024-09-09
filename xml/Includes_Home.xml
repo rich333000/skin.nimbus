@@ -737,27 +737,27 @@
 		<onright>$PARAM[list_id]</onright>
 		<onback condition="String.IsEqual(Skin.String(onBackSetting),1)">SetFocus($PARAM[list_id],0,absolute)</onback>
 		<onback condition="String.IsEqual(Skin.String(onBackSetting),0)">9000</onback>
-		<onfocus condition="!Skin.HasSetting(Disable.WidgetNavigationArrows)">RunScript(script.nimbus.helper,mode=set_widget_count,$PARAM[list_id])</onfocus>
+		<onfocus condition="!Skin.HasSetting(Disable.WidgetNavigationArrows)">RunScript(script.nimbusx8.helper,mode=set_widget_count,$PARAM[list_id])</onfocus>
 
-		<onfocus>ClearProperty(nimbus_episode_thumb,home)</onfocus>
-		<onfocus>ClearProperty(nimbus_episode_fanart,home)</onfocus>
-		<onfocus>ClearProperty(nimbus_episode_landscape,home)</onfocus>
-		<onfocus>ClearProperty(nimbus_fanart_art,home)</onfocus>
-		<onfocus>ClearProperty(nimbus_fanart_prop,home)</onfocus>
-		<onfocus>ClearProperty(nimbus_landscape_art,home)</onfocus>
-		<onfocus>ClearProperty(nimbus_landscape_prop,home)</onfocus>
+		<onfocus>ClearProperty(nimbusx8_episode_thumb,home)</onfocus>
+		<onfocus>ClearProperty(nimbusx8_episode_fanart,home)</onfocus>
+		<onfocus>ClearProperty(nimbusx8_episode_landscape,home)</onfocus>
+		<onfocus>ClearProperty(nimbusx8_fanart_art,home)</onfocus>
+		<onfocus>ClearProperty(nimbusx8_fanart_prop,home)</onfocus>
+		<onfocus>ClearProperty(nimbusx8_landscape_art,home)</onfocus>
+		<onfocus>ClearProperty(nimbusx8_landscape_prop,home)</onfocus>
 
-		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + $EXP[isEpisode]">SetProperty(nimbus_episode_thumb,$INFO[Container($PARAM[list_id]).ListItem(0).Art(thumb)],home)</onunfocus>
-		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + $EXP[isEpisode]">SetProperty(nimbus_episode_fanart,$INFO[Container($PARAM[list_id]).ListItem(0).Art(fanart)],home)</onunfocus>
-		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + $EXP[isEpisode]">SetProperty(nimbus_episode_landscape,$INFO[Container($PARAM[list_id]).ListItem(0).Art(landscape)],home)</onunfocus>
-		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork)">SetProperty(nimbus_fanart_art, $INFO[Container($PARAM[list_id]).ListItem(0).Art(fanart)], home)</onunfocus>
-		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork)">SetProperty(nimbus_fanart_prop, $INFO[Container($PARAM[list_id]).ListItem(0).Property(fanart)], home)</onunfocus>
-		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + $EXP[isContent] + !$EXP[isEpisode] + ![String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Art(landscape)) + !String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Art(fanart))]">SetProperty(nimbus_landscape_art, $INFO[Container($PARAM[list_id]).ListItem(0).Art(landscape)], home)</onunfocus>
-		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + $EXP[isContent] + !$EXP[isEpisode] + [String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Art(landscape)) + !String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Art(fanart))]">SetProperty(nimbus_landscape_art, $INFO[Container($PARAM[list_id]).ListItem(0).Art(fanart)], home)</onunfocus>
-		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + $EXP[isContent] + !$EXP[isEpisode] + ![String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Property(landscape)) + !String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Property(fanart))]">SetProperty(nimbus_landscape_prop, $INFO[Container($PARAM[list_id]).ListItem(0).Property(landscape)], home)</onunfocus>
-		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + $EXP[isContent] + !$EXP[isEpisode] + [String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Property(landscape)) + !String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Property(fanart))]">SetProperty(nimbus_landscape_prop, $INFO[Container($PARAM[list_id]).ListItem(0).Property(fanart)], home)</onunfocus>
-		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + !$EXP[isContent]">SetProperty(nimbus_landscape_art, $INFO[Container($PARAM[list_id]).ListItem(0).Art(fanart)], home)</onunfocus>
-		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + !$EXP[isContent]">SetProperty(nimbus_landscape_prop, $INFO[Container($PARAM[list_id]).ListItem(0).Property(fanart)], home)</onunfocus>
+		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + $EXP[isEpisode]">SetProperty(nimbusx8_episode_thumb,$INFO[Container($PARAM[list_id]).ListItem(0).Art(thumb)],home)</onunfocus>
+		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + $EXP[isEpisode]">SetProperty(nimbusx8_episode_fanart,$INFO[Container($PARAM[list_id]).ListItem(0).Art(fanart)],home)</onunfocus>
+		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + $EXP[isEpisode]">SetProperty(nimbusx8_episode_landscape,$INFO[Container($PARAM[list_id]).ListItem(0).Art(landscape)],home)</onunfocus>
+		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork)">SetProperty(nimbusx8_fanart_art, $INFO[Container($PARAM[list_id]).ListItem(0).Art(fanart)], home)</onunfocus>
+		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork)">SetProperty(nimbusx8_fanart_prop, $INFO[Container($PARAM[list_id]).ListItem(0).Property(fanart)], home)</onunfocus>
+		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + $EXP[isContent] + !$EXP[isEpisode] + ![String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Art(landscape)) + !String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Art(fanart))]">SetProperty(nimbusx8_landscape_art, $INFO[Container($PARAM[list_id]).ListItem(0).Art(landscape)], home)</onunfocus>
+		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + $EXP[isContent] + !$EXP[isEpisode] + [String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Art(landscape)) + !String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Art(fanart))]">SetProperty(nimbusx8_landscape_art, $INFO[Container($PARAM[list_id]).ListItem(0).Art(fanart)], home)</onunfocus>
+		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + $EXP[isContent] + !$EXP[isEpisode] + ![String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Property(landscape)) + !String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Property(fanart))]">SetProperty(nimbusx8_landscape_prop, $INFO[Container($PARAM[list_id]).ListItem(0).Property(landscape)], home)</onunfocus>
+		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + $EXP[isContent] + !$EXP[isEpisode] + [String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Property(landscape)) + !String.IsEmpty(Container($PARAM[list_id]).ListItem(0).Property(fanart))]">SetProperty(nimbusx8_landscape_prop, $INFO[Container($PARAM[list_id]).ListItem(0).Property(fanart)], home)</onunfocus>
+		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + !$EXP[isContent]">SetProperty(nimbusx8_landscape_art, $INFO[Container($PARAM[list_id]).ListItem(0).Art(fanart)], home)</onunfocus>
+		<onunfocus condition="!Skin.HasSetting(Disable.PersistentArtwork) + !$EXP[isContent]">SetProperty(nimbusx8_landscape_prop, $INFO[Container($PARAM[list_id]).ListItem(0).Property(fanart)], home)</onunfocus>
 		<preloaditems>2</preloaditems>
 	</include>
 
@@ -813,9 +813,9 @@
 
 	<include name="NimbusSkinStringsInitialization">
 		<onload condition="!Skin.HasSetting(firsttimerun)">ActivateWindow(1112)</onload>
-		<onload condition="Skin.HasSetting(firsttimerun)">RunScript(script.nimbus.helper,mode=check_for_update&amp;skin_id=skin.nimbus)</onload>
-		<onload>RunScript(script.nimbus.helper,mode=check_for_profile_change&amp;skin_id=skin.nimbus)</onload>
-		<onload>RunScript(script.nimbus.helper,mode=modify_keymap)</onload>
+		<onload condition="Skin.HasSetting(firsttimerun)">RunScript(script.nimbusx8.helper,mode=check_for_update&amp;skin_id=skin.nimbusx8)</onload>
+		<onload>RunScript(script.nimbusx8.helper,mode=check_for_profile_change&amp;skin_id=skin.nimbusx8)</onload>
+		<onload>RunScript(script.nimbusx8.helper,mode=modify_keymap)</onload>
 		<onload condition="!String.IsEmpty(Skin.String(TrailerPlaying))">Skin.Reset(TrailerPlaying)</onload>
 		<onload condition="String.IsEmpty(Skin.String(BlurRadius))">Skin.SetString(BlurRadius,30)</onload>	
 		<onload condition="String.IsEmpty(Skin.String(BlurSaturation))">Skin.SetString(BlurSaturation,1.5)</onload>	
@@ -870,7 +870,7 @@
 		<onload condition="String.IsEmpty(Skin.String(ItemFanartChoice.movies))">Skin.SetString(ItemFanartChoice.movies,0)</onload>
 		<onload condition="String.IsEmpty(Skin.String(ItemFanartChoice.tvshows))">Skin.SetString(ItemFanartChoice.tvshows,0)</onload>
 		<onload condition="String.IsEmpty(Skin.String(ItemFanartChoice.seasons))">Skin.SetString(ItemFanartChoice.seasons,0)</onload>
-		<onload condition="!String.IsEmpty(Skin.String(mdblist_api_key)) + String.IsEmpty(Skin.String(valid_api_key))">RunScript(script.nimbus.helper, mode=check_api_key_on_load)</onload>
+		<onload condition="!String.IsEmpty(Skin.String(mdblist_api_key)) + String.IsEmpty(Skin.String(valid_api_key))">RunScript(script.nimbusx8.helper, mode=check_api_key_on_load)</onload>
 	</include>
 
 </includes>

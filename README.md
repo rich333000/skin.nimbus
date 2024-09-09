@@ -1,8 +1,12 @@
-# Nimbus Skin for Kodi Omega
+# Modded Nimbus Skin for Kodi Omega by Ivar Brandt
+Renamed so both skins can be installed at the same time.
 
- https://rb.gy/l9zpkl
 
 ## INFO
 
-Kodi File Manager Source: [https://ivarbrandt.github.io/repository.ivarbrandt/](https://ivarbrandt.github.io/repository.ivarbrandt/)
+Settings can only be accessed by 'S' key or custom keymap!
+
+Changed Mini Menus
+Added 3 extra custom menu sections (now 8 total)
+Changed Home layout to display 8 sections
 
